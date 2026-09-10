@@ -468,6 +468,11 @@
 
   let state = loadState();
 
+  // Ensure dashboard loads with unfiltered views.
+  qEl.value = '';
+  catEl.value = 'all';
+  statusEl.value = 'all';
+
   function rerenderAll(){
     renderTimeline();
     renderBudget();

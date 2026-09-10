@@ -52,18 +52,33 @@
   .pagecard .go{ margin-top:auto; font-weight:700; font-size:14px; color:var(--navy); display:flex; align-items:center; gap:6px; }
   .pagecard:hover .go{ color:var(--teal); }
 
-  .impact-strip{
-    display:flex; gap:22px; flex-wrap:wrap; justify-content:center; padding:28px 0 8px;
+  .keywords-row{
+    display:flex; flex-wrap:wrap; gap:8px; align-items:center; justify-content:center; margin:0 0 24px;
   }
-  .impact-item{ display:flex; align-items:center; gap:10px; font-size:14px; color:var(--muted); }
-  .impact-item svg{ width:18px; height:18px; color:var(--teal); flex:0 0 auto; }
+  .kw-label{
+    font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.05em;
+    color:var(--muted); margin-right:4px;
+  }
+  .kw-chip{
+    font-size:12.5px; font-weight:600; color:var(--navy); background:var(--navySoft);
+    padding:6px 12px; border-radius:999px;
+  }
+
+  .research-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; align-items:start; }
+  @media (max-width:900px){ .research-grid{ grid-template-columns:1fr; } }
+  .research-card h3{ margin:0 0 12px; font-size:18px; letter-spacing:-.01em; }
+  .research-card p{ margin:0 0 10px; font-size:14.5px; color:var(--muted); line-height:1.6; }
+  .research-card p:last-child{ margin-bottom:0; }
+  .research-card ul{ margin:0 0 10px; padding-left:18px; font-size:14.5px; color:var(--muted); line-height:1.6; }
+  .research-card ul li{ margin-bottom:6px; }
+  .research-card ul li:last-child{ margin-bottom:0; }
 </style>
 </head>
 <body>
 
   <header class="site-header">
     <nav class="site-nav">
-      <a class="brand" href="https://speedlab-git.github.io/coastsight/index.html">
+      <a class="brand" href="https://awal-ahmed.github.io/coastsight/index.html">
         <img src="assets/logo-small.png" alt="CoastSight logo" />
         <span class="word"><b>Coast</b><span>Sight</span></span>
       </a>
@@ -95,6 +110,63 @@
         <a class="btn btn-primary" href="project/index.html">Read the project overview</a>
         <a class="btn btn-ghost" href="dashboard/index.html">Open the action-plan dashboard</a>
       </div>
+
+      <div class="stats">
+        <div class="stat"><div class="v">Generative Video</div><div class="k">Synthetic disaster footage</div></div>
+        <div class="stat"><div class="v">Vision-Language AI</div><div class="k">Disaster scene understanding</div></div>
+        <div class="stat"><div class="v">Spring 2027</div><div class="k">Planned VIP team launch</div></div>
+      </div>
+    </section>
+
+    <section class="section container" style="padding-top:0;">
+
+      <div class="research-grid">
+        <div class="card research-card">
+          <h3>Our Research</h3>
+          <p>
+            Disasters like floods, hurricanes, storm surges, and wildfires are growing more
+            frequent and severe — but there isn't nearly enough real disaster video footage to
+            train AI on, which makes it hard to build models that can reliably read a disaster
+            scene and support emergency response and urban planning.
+          </p>
+          <p>
+            CoastSight tackles this from both ends: generating realistic, <b>AI-ready disaster video</b>,
+            and training <b>vision-language models</b> that can understand, describe, and reason about
+            what's happening in a scene — turning raw footage into intelligence that emergency
+            managers, planners, and coastal communities can actually use.
+          </p>
+        </div>
+
+        <div class="card research-card">
+          <h3>Our Strategy</h3>
+          <p>
+            Team members will build <b>generative models</b> that turn text prompts into realistic
+            coastal-disaster video, train <b>vision-language models</b> to interpret scenes, summarize
+            footage, and answer situational questions, and draw on <b>GIS</b>, urban-planning, and
+            environmental data to design realistic training scenarios — then test how well these
+            models hold up on real emergency-management and resilience tasks.
+          </p>
+          <p>
+            Along the way, students build hands-on skills in <b>generative AI</b>, <b>vision-language
+            modeling</b>, <b>computer vision</b>, <b>video analytics</b>, and <b>geospatial AI</b>.
+          </p>
+        </div>
+
+        <div class="card research-card">
+          <h3>Our Impact</h3>
+          <p>
+            The project aims to advance next-generation AI for <b>disaster-video understanding</b>,
+            close the disaster-data gap through <b>synthetic video generation</b>, strengthen
+            <b>emergency preparedness and response</b>, and help coastal communities become safer
+            and more <b>resilient</b> — while giving students hands-on experience in a fast-moving
+            area of AI research.
+          </p>
+          <p>
+            Together, generative AI and video intelligence turn disaster data into insight —
+            supporting more resilient cities and more sustainable coastal communities.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="section container">
@@ -122,13 +194,6 @@
           <p>A live task tracker, recruitment &amp; launch timeline, and funding snapshot for standing up the CoastSight VIP research team.</p>
           <span class="go">Open the dashboard →</span>
         </a>
-      </div>
-
-      <div class="impact-strip">
-        <div class="impact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>Enhances preparedness &amp; training</div>
-        <div class="impact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>Supports rapid scenario simulation</div>
-        <div class="impact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 4 5-8"/></svg>Improves decision-making under uncertainty</div>
-        <div class="impact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/><path d="M2 12h20"/></svg>Scalable to diverse hazards &amp; locations</div>
       </div>
     </section>
   </main>
