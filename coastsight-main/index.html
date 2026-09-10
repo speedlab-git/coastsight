@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>CoastSight: Generative and Vision-Language AI for Disaster Intelligence</title>
+<meta name="description" content="CoastSight is an FAU Vertically Integrated Projects (VIP) research team building generative and vision-language AI — text-to-video generation and disaster video understanding — for coastal emergency response and resilience." />
+<link rel="icon" href="assets/logo-small.png" />
+<link rel="stylesheet" href="assets/style.css" />
+<style>
+  .hero{
+    padding:64px 0 40px; text-align:center;
+  }
+  .hero h1{
+    font-size:clamp(24px, 3.4vw, 34px); line-height:1.35; letter-spacing:-.015em;
+    margin:0 auto 22px; max-width:800px; font-weight:800;
+  }
+  .hero h1 .cs-coast{ color:var(--navy); }
+  .hero h1 .cs-sight{ color:var(--teal); }
+  .hero h1 .cs-rest{ color:var(--text); }
+  .hero-figure{ margin:4px auto 26px; max-width:640px; }
+  .hero-figure img{
+    width:100%; display:block; border-radius:16px; border:1px solid var(--border); box-shadow:var(--shadow);
+  }
+  .hero-figure figcaption{ margin-top:10px; font-size:12.5px; color:var(--muted); }
+  .hero-figure figcaption a{ color:var(--teal); text-decoration:none; font-weight:650; }
+  .hero-figure figcaption a:hover{ text-decoration:underline; }
+  .hero p.lead{ color:var(--muted); font-size:17px; max-width:62ch; margin:0 auto 28px; }
+  .hero .actions{ display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+
+  .stats{ display:flex; gap:28px; justify-content:center; flex-wrap:wrap; margin-top:44px; }
+  .stat{ text-align:center; min-width:140px; }
+  .stat .v{ font-size:26px; font-weight:800; color:var(--navy); letter-spacing:-.02em; }
+  .stat .k{ font-size:13px; color:var(--muted); margin-top:2px; }
+
+  .pages{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  @media (max-width:900px){ .pages{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:600px){ .pages{ grid-template-columns:1fr; } }
+  .pagecard{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    box-shadow:var(--shadow); padding:26px; text-decoration:none; color:var(--text);
+    display:flex; flex-direction:column; gap:14px; transition:transform .15s, box-shadow .15s;
+  }
+  .pagecard:hover{ transform:translateY(-3px); box-shadow:0 16px 34px rgba(10,47,82,.14); }
+  .pagecard .tag{
+    font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
+    color:var(--teal); background:var(--tealSoft); display:inline-block; padding:5px 10px;
+    border-radius:999px; width:max-content;
+  }
+  .pagecard h3{ margin:0; font-size:20px; letter-spacing:-.01em; }
+  .pagecard p{ margin:0; color:var(--muted); font-size:14.5px; }
+  .pagecard .go{ margin-top:auto; font-weight:700; font-size:14px; color:var(--navy); display:flex; align-items:center; gap:6px; }
+  .pagecard:hover .go{ color:var(--teal); }
+
+  .impact-strip{
+    display:flex; gap:22px; flex-wrap:wrap; justify-content:center; padding:28px 0 8px;
+  }
+  .impact-item{ display:flex; align-items:center; gap:10px; font-size:14px; color:var(--muted); }
+  .impact-item svg{ width:18px; height:18px; color:var(--teal); flex:0 0 auto; }
+</style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="site-nav">
+      <a class="brand" href="https://awal-ahmed.github.io/coastsight/index.html">
+        <img src="assets/logo-small.png" alt="CoastSight logo" />
+        <span class="word"><b>Coast</b><span>Sight</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="project/index.html">Project</a>
+        <a href="people/index.html">People</a>
+        <a href="dashboard/index.html">Dashboard</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">Vertically Integrated Projects (VIP) Research Team</div>
+      <h1><span class="cs-coast">Coast</span><span class="cs-sight">Sight</span><span class="cs-rest">: Generative and Vision-Language AI for Disaster Intelligence</span></h1>
+
+      <figure class="hero-figure">
+        <img src="https://www.fau.edu/vip/images/project-image-cards/ai-for-disaster-intelligence.png" alt="CoastSight: Generative and Vision-Language AI for Disaster Intelligence — official FAU VIP project figure" loading="lazy" />
+        <figcaption>Official project figure — <a href="https://www.fau.edu/vip/projects/coastsight-coastal-ai-disaster-intelligence-/" target="_blank" rel="noopener">FAU Vertically Integrated Projects (VIP) Program ↗</a></figcaption>
+      </figure>
+
+      <p class="lead">
+        Generating realistic, controllable emergency-response scenarios from natural language —
+        starting with state-of-the-art text-to-image synthesis, and building toward temporally
+        coherent text-to-video simulations for training, planning, and decision support.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="project/index.html">Read the project overview</a>
+        <a class="btn btn-ghost" href="dashboard/index.html">Open the action-plan dashboard</a>
+      </div>
+    </section>
+
+    <section class="section container">
+      <div class="section-head" style="margin:0 auto 28px;text-align:center;max-width:640px;">
+        <h2>Three places to look</h2>
+        <p>The project overview explains what CoastSight is and where it's headed. Meet the people behind it. The dashboard tracks the team's live action plan, timeline, and budget.</p>
+      </div>
+
+      <div class="pages">
+        <a class="pagecard" href="project/index.html">
+          <span class="tag">Project</span>
+          <h3>Project Overview</h3>
+          <p>What CoastSight is, how the text-to-image pipeline works today, the roadmap to text-to-video generation, and the expected impact on emergency preparedness.</p>
+          <span class="go">Explore the project →</span>
+        </a>
+        <a class="pagecard" href="people/index.html">
+          <span class="tag">People</span>
+          <h3>People</h3>
+          <p>The three faculty leads and 13-student research team standing up CoastSight as a Vertically Integrated Project.</p>
+          <span class="go">Meet the team →</span>
+        </a>
+        <a class="pagecard" href="dashboard/index.html">
+          <span class="tag">Dashboard</span>
+          <h3>VIP Action Plan Dashboard</h3>
+          <p>A live task tracker, recruitment &amp; launch timeline, and funding snapshot for standing up the CoastSight VIP research team.</p>
+          <span class="go">Open the dashboard →</span>
+        </a>
+      </div>
+
+      <div class="impact-strip">
+        <div class="impact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>Enhances preparedness &amp; training</div>
+        <div class="impact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7z"/></svg>Supports rapid scenario simulation</div>
+        <div class="impact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-6 4 4 5-8"/></svg>Improves decision-making under uncertainty</div>
+        <div class="impact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/><path d="M2 12h20"/></svg>Scalable to diverse hazards &amp; locations</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2026 CoastSight VIP Research Team.</div>
+    </div>
+  </footer>
+
+</body>
+</html>
