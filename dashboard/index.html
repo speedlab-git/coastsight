@@ -69,7 +69,7 @@
 
     .bottomSection {
       margin-top: 120px; /* ≈ height of the two removed rows + bars + note line */
-      margin-bottom: 100px;
+      margin-bottom: 130px;
     }
 
     .metrics{ display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; padding:14px 16px; }
@@ -320,15 +320,9 @@
   }
 
   function renderBudget(){
-    const { total, mentor, travel } = state.budget;
+    const { total } = state.budget;
     el('bTotal').textContent = money(total);
-    el('bMentor').textContent = money(mentor);
-    el('bTravel').textContent = money(travel);
-
-    const pct = (v) => Math.max(0, Math.min(100, total ? (v/total*100) : 0));
     el('bTotalBar').style.width = '100%';
-    el('bMentorBar').style.width = pct(mentor) + '%';
-    el('bTravelBar').style.width = pct(travel) + '%';
   }
 
   function filterTasks(){
