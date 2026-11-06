@@ -241,20 +241,20 @@
 
 <script>
 (() => {
-  const STORAGE_KEY = 'coastsight_vip_dashboard_v2';
+  const STORAGE_KEY = 'coastsight_vip_dashboard_v3';
 
   const DEFAULT = {
     budget: { total: 48000, mentor: 1500, travel: 0 },
     tasks: [
       // Immediate
       { id:'compliance', cat:'Immediate', title:'Confirm compliance "green check" status', desc:'Verify IRB/IACUC/IBC or exemption; required before spending.', status:'Done', done:true },
-      { id:'budget-confirm', cat:'Budget', title:'Confirm exact budget + spending deadlines', desc:'Cost-share vs FIPSE deadlines; verify final total with Yami.', status:'Todo', done:false },
+      { id:'budget-confirm', cat:'Budget', title:'Confirm exact budget + spending deadlines', desc:'Cost-share vs FIPSE deadlines; verify final total with Yami.', status:'Done', done:true },
       { id:'peer-mentor', cat:'Immediate', title:'Select a paid peer mentor', desc:'~$1,500; ~5 hrs/week; liaison + onboarding + reminders.', status:'Done', done:true },
       { id:'existing-students', cat:'Immediate', title:'Identify existing students as initial leaders', desc:'Optionally send names directly to VIP office.', status:'Todo', done:false },
       { id:'half-semester', cat:'Immediate', title:'Notify VIP office if any senior needs half-semester start', desc:'Enable second-half Fall 2026 participation to meet 2-semester requirement.', status:'Todo', done:false },
 
       // Recruitment
-      { id:'review-list-1', cat:'Recruitment', title:'Review first interest list (mid-October)', desc:'Mark accepts; ensure 5–7 freshmen/sophomores reserved.', status:'Todo', done:false },
+      { id:'review-list-1', cat:'Recruitment', title:'Review first interest list (mid-October)', desc:'Mark accepts; ensure 5–7 freshmen/sophomores reserved.', status:'Done', done:true },
       { id:'review-list-2', cat:'Recruitment', title:'Review second candidate group (around Nov 18, if needed)', desc:'Fill remaining needs; confirm team size ~12–20.', status:'Todo', done:false },
       { id:'finalize-team', cat:'Recruitment', title:'Finalize team in December', desc:'Confirm IDS registration, RCR, assignments, onboarding plan.', status:'Todo', done:false },
 
